@@ -13,20 +13,10 @@ const {Query, User} = AV;
 if (process.env.appId && process.env.appKey) {
     AV.init({
         appId: process.env.appId, appKey: process.env.appKey
-    serverURLs: {
-    push: 'https://sever.1703.site',
-    stats: 'https://sever.1703.site',
-    engine: 'https://sever.1703.site',
-    api: 'https://sever.1703.site',
     });
 } else {
     AV.init({
         appId: "xxxxx", appKey: "xxxxx"
-        serverURLs: {
-    push: 'https://sever.1703.site',
-    stats: 'https://sever.1703.site',
-    engine: 'https://sever.1703.site',
-    api: 'https://sever.1703.site',
     });
 }
 
